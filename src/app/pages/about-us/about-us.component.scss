@@ -45,6 +45,7 @@
   margin-bottom: 1.8rem;
   background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slideDown 1s ease-in-out;
   text-shadow: 0 0 25px rgba(255, 102, 0, 0.25);
@@ -107,6 +108,7 @@
   margin: 0.7rem 0;
   padding: 0.8rem 1.2rem;
   border-radius: 10px;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 10px var(--color-shadow);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -136,6 +138,7 @@
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
