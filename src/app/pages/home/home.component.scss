@@ -192,7 +192,7 @@
   flex-shrink: 0;
 }
 
-/* 🎞️ Movie Grid */
+/* Movie Grid */
 .movie-grid {
   display: grid;
   gap: 2rem;
@@ -203,7 +203,7 @@
   margin-bottom: 2rem;
 }
 
-/* 🎬 Movie Card */
+/* Movie Card */
 .movie-card {
   background: rgba(31, 41, 55, 0.95);
   border-radius: 16px;
@@ -221,7 +221,7 @@
   box-shadow: 0 12px 28px rgba(255, 102, 0, 0.35);
 }
 
-/* 🖼️ Poster Image */
+/* Poster Image */
 .movie-poster {
   width: 100%;
   height: 18rem;
@@ -236,7 +236,7 @@
   filter: brightness(1.1) saturate(1.2);
 }
 
-/* 🎥 Movie Info */
+/* Movie Info */
 .movie-info {
   padding: 1.2rem;
   display: flex;
@@ -269,7 +269,7 @@
   text-overflow: ellipsis;
 }
 
-/* ⭐ Rating */
+/* Rating */
 .movie-rating {
   font-size: 0.9rem;
   color: #ffcc00;
@@ -283,7 +283,7 @@
   color: #ffcc00;
 }
 
-/* ▶️ Watch Button */
+/*  Watch Button */
 .watch-button {
   display: inline-flex;
   align-items: center;
@@ -306,7 +306,7 @@
   box-shadow: 0 0 25px rgba(255, 102, 0, 0.6);
 }
 
-/* 📚 SEO Text */
+/* SEO Text */
 .seo-text {
   margin-top: 4rem;
   padding: 2.5rem 1.8rem;
@@ -381,7 +381,7 @@
   color: #ff8844;
 }
 
-/* 📢 AdSense Block */
+/* AdSense Block */
 .ad-block {
   display: block;
   text-align: center;
