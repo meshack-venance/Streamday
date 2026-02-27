@@ -110,7 +110,7 @@
   </ng-container>
 
   <ng-container *ngIf="!query.trim() && !selectedGenre">
-    <h2 class="category-title">🔥 Trending Now</h2>
+    <h2 class="category-title"><i class="bi bi-fire"></i> Trending Now</h2>
     <section class="movie-grid block-grid">
       <article *ngFor="let movie of trendingMovies" class="movie-card">
         <img
@@ -146,7 +146,9 @@
       </article>
     </section>
 
-    <h2 class="category-title">⭐ Top Rated (All Time)</h2>
+    <h2 class="category-title">
+      <i class="bi bi-trophy-fill"></i> Top Rated (All Time)
+    </h2>
     <section class="movie-grid block-grid">
       <article *ngFor="let movie of topRatedMovies" class="movie-card">
         <img
@@ -182,7 +184,9 @@
       </article>
     </section>
 
-    <h2 class="category-title">📅 Upcoming Releases</h2>
+    <h2 class="category-title">
+      <i class="bi bi-calendar-event-fill"></i> Upcoming Releases
+    </h2>
     <section class="movie-grid block-grid">
       <article *ngFor="let movie of upcomingMovies" class="movie-card">
         <img
@@ -218,7 +222,9 @@
       </article>
     </section>
 
-    <h2 class="category-title">🎬 Now Playing in Cinemas</h2>
+    <h2 class="category-title">
+      <i class="bi bi-camera-reels-fill"></i> Now Playing in Cinemas
+    </h2>
     <section class="movie-grid block-grid">
       <article *ngFor="let movie of nowPlayingMovies" class="movie-card">
         <img
@@ -260,20 +266,31 @@
     <p>
       At <strong>StreamDay</strong>, we help movie lovers and TV fans stay
       updated with the latest releases and trending titles. Our platform makes
-      it easy to discover what’s popular, explore genres, and get quick access
+      it easy to discover what's popular, explore genres, and get quick access
       to ratings and trailers.
     </p>
 
     <h3>Top Features</h3>
     <ul>
-      <li>Browse by genre, release date, or popularity</li>
-      <li>Get accurate ratings and reviews</li>
-      <li>Watch official trailers before deciding</li>
-      <li>Find where to watch movies legally online</li>
+      <li>
+        <i class="bi bi-collection-play-fill"></i> Browse by genre, release
+        date, or popularity
+      </li>
+      <li>
+        <i class="bi bi-bar-chart-fill"></i> Get accurate ratings and reviews
+      </li>
+      <li>
+        <i class="bi bi-play-btn-fill"></i> Watch official trailers before
+        deciding
+      </li>
+      <li>
+        <i class="bi bi-patch-check-fill"></i> Find where to watch movies
+        legally online
+      </li>
     </ul>
 
     <p>
-      Whether you’re looking for a weekend binge, family-friendly films, or the
+      Whether you're looking for a weekend binge, family-friendly films, or the
       next blockbuster, StreamDay brings you reliable information all in one
       place.
     </p>
