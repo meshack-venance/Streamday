@@ -66,8 +66,13 @@
   animation-delay: 0.7s;
 }
 
+/* Rating star icon */
+.rating-star {
+  color: #ffcc00;
+}
+
 /* Streaming iframe */
-.movie-detail-container iframe {
+.stream-iframe {
   position: relative;
   z-index: 1;
   display: block;
@@ -85,13 +90,13 @@
   opacity: 0;
 }
 
-.movie-detail-container iframe:hover {
+.stream-iframe:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 24px rgba(255, 56, 92, 0.3);
 }
 
 /* No stream message */
-.movie-detail-container .no-stream {
+.no-stream {
   text-align: center;
   font-style: italic;
   color: #888;
@@ -99,7 +104,7 @@
   animation: fadeIn 0.6s ease-in forwards;
 }
 
-/* 🎥 Extra Movie Info Section */
+/* Extra Movie Info Section */
 .movie-extra {
   position: relative;
   z-index: 1;
@@ -156,7 +161,7 @@
   font-weight: 600;
 }
 
-/* 🧾 Disclaimer Footer */
+/* Disclaimer Footer */
 .disclaimer {
   position: relative;
   z-index: 1;
@@ -188,7 +193,7 @@
   text-decoration: underline;
 }
 
-/* 🌟 Keyframe Animations */
+/* Keyframe Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -251,9 +256,9 @@
   }
 }
 
-/* ⚡ Responsiveness */
+/* Responsiveness */
 @media (max-width: 1024px) {
-  .movie-detail-container iframe {
+  .stream-iframe {
     height: 480px;
   }
 }
@@ -262,20 +267,16 @@
   .movie-detail-container {
     padding: 1.5rem;
   }
-
   .movie-detail-container h2 {
     font-size: 1.9rem;
   }
-
   .movie-extra {
     padding: 1.5rem;
   }
-
   .movie-extra h3 {
     font-size: 1.3rem;
   }
-
-  .movie-detail-container iframe {
+  .stream-iframe {
     height: 360px;
   }
 }
@@ -284,15 +285,12 @@
   .movie-detail-container {
     padding: 1rem;
   }
-
   .movie-detail-container h2 {
     font-size: 1.4rem;
   }
-
-  .movie-detail-container iframe {
+  .stream-iframe {
     height: 240px;
   }
-
   .movie-extra h3 {
     font-size: 1.2rem;
   }

@@ -13,7 +13,7 @@
 
     <!-- Rating -->
     <p *ngIf="movie?.vote_average">
-      <i class="bi bi-star-fill" style="color: #ffcc00"></i>
+      <i class="bi bi-star-fill rating-star"></i>
       Rating: {{ movie.vote_average | number: "1.1-1" }} / 10
     </p>
 
@@ -23,10 +23,8 @@
         [src]="streamUrl | safeUrl"
         allowfullscreen
         frameborder="0"
-        width="100%"
-        height="500"
         title="Official Stream"
-        style="border: none"
+        class="stream-iframe"
       ></iframe>
     </div>
 
@@ -62,7 +60,10 @@
     <p>
       <strong>Disclaimer:</strong> StreamDay does not host or share copyrighted
       video streams. All movie data, images, and trailers are provided by
-      <a href="https://www.themoviedb.org/" target="_blank" rel="noopener"
+      <a
+        href="https://www.themoviedb.org/"
+        target="_blank"
+        rel="noopener noreferrer"
         >TMDb</a
       >
       and other official sources. Please use legal providers to watch full
