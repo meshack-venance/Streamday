@@ -12,7 +12,7 @@ interface Genre {
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
   isMenuOpen = false;
@@ -24,7 +24,7 @@ export class NavbarComponent {
     { id: 2, name: 'Comedy' },
     { id: 3, name: 'Drama' },
     { id: 4, name: 'Horror' },
-    { id: 5, name: 'Romance' }
+    { id: 5, name: 'Romance' },
   ];
 
   constructor(private router: Router) {}

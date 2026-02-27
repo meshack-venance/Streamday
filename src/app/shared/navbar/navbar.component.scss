@@ -9,6 +9,7 @@
   top: 0;
   z-index: 1000;
   animation: fadeIn 1.2s ease-in;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -17,7 +18,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at top, rgba(255, 102, 0, 0.08), transparent 70%);
+  background: radial-gradient(
+    ellipse at top,
+    rgba(255, 102, 0, 0.08),
+    transparent 70%
+  );
   filter: blur(60px);
   z-index: 0;
 }
@@ -42,7 +47,9 @@
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   letter-spacing: 1.2px;
-  transition: transform 0.3s ease, text-shadow 0.4s ease;
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.4s ease;
 }
 
 .navbar-logo:hover,
@@ -68,7 +75,9 @@
   font-weight: 600;
   font-size: 1rem;
   position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .nav-links.desktop li a::after {
@@ -113,6 +122,7 @@
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
   border-radius: 0 0 16px 16px;
   animation: fadeDown 0.4s ease;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -181,11 +191,23 @@
 
 /* ✨ Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -17,8 +17,15 @@
     </button>
 
     <!-- Navigation Links (Desktop + Mobile) -->
-    <ul class="nav-links desktop" >
-      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+    <ul class="nav-links desktop">
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
       <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
     </ul>
 
@@ -29,8 +36,23 @@
       [class.open]="isMenuOpen"
       *ngIf="isMenuOpen"
     >
-      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="isMenuOpen=false">Home</a></li>
-      <li><a routerLink="/about" routerLinkActive="active" (click)="isMenuOpen=false">About Us</a></li>
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="isMenuOpen = false"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/about"
+          routerLinkActive="active"
+          (click)="isMenuOpen = false"
+          >About Us</a
+        >
+      </li>
     </ul>
   </div>
 </nav>

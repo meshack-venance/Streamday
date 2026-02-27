@@ -16,7 +16,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(255, 102, 0, 0.08), transparent 75%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 102, 0, 0.08),
+    transparent 75%
+  );
   filter: blur(90px);
   z-index: 0;
 }
@@ -143,11 +147,23 @@
 
 /* ✨ Animations (reuse from main theme) */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

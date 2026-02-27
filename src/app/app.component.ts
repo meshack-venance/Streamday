@@ -14,7 +14,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     FormsModule,
     RouterModule,
     NavbarComponent,
-    FooterComponent  // include footer here as well
+    FooterComponent  
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
